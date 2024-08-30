@@ -24,46 +24,46 @@ todos los bloques siguientes, creándose una blockchain totalmente nueva.
 graph LR
     subgraph Bloque3[Bloque 3]
         direction LR
+            subgraph Header3[Header]
+                direction LR
+                H3A[Bloque Anterior: eb3639f3c1db4094....]
+                H3B[Datos Variados...]
+            end
             subgraph Registros3 [Registros]
                 direction LR
                 R3A[Registro 1]
                 R3B[Registro 2]
                 R3C[Registro 3]
             end
-            subgraph Header3[Header]
-                direction LR
-                H3A[Bloque Anterior: eb3639f3c1db4094....]
-                H3B[Datos Variados...]
-            end
             Hash3[Hash: 3a7019670ca8e304...]
     end
     subgraph Bloque2[Bloque 2]
         direction LR
+            subgraph Header2[Header]
+                direction LR
+                H2A[Bloque Anterior: fd21d5879667f86....]
+                H2B[Datos Variados...]
+            end
             subgraph Registros2 [Registros]
                 direction LR
                 R2A[Registro 1]
                 R2B[Registro 2]
                 R2C[Registro 3]
             end
-            subgraph Header2[Header]
-                direction LR
-                H2A[Bloque Anterior: fd21d5879667f86....]
-                H2B[Datos Variados...]
-            end
             Hash2[Hash: eb3639f3c1db4094...]
     end
     subgraph Bloque1[Bloque 1]
         direction LR
+            subgraph Header1[Header]
+                direction LR
+                H1A[Bloque Anterior: ...]
+                H1B[Datos Variados...]
+            end
             subgraph Registros1 [Registros]
                 direction LR
                 R1A[Registro 1]
                 R1B[Registro 2]
                 R1C[Registro 3]
-            end
-            subgraph Header1[Header]
-                direction LR
-                H1A[Bloque Anterior: ...]
-                H1B[Datos Variados...]
             end
             Hash1[Hash: fd21d5879667f86...]
     end
